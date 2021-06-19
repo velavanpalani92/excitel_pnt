@@ -7,7 +7,7 @@
         <div id="sidebar-menu">
 
             <ul id="side-menu">
-    
+
                 <li>
                     <a href="{{ url('/') }}" >
                         <i class="mdi mdi-view-dashboard-outline"></i>
@@ -26,7 +26,7 @@
                     <div class="collapse" id="sidebarCrm">
                         <ul class="nav-second-level">
                             <li>
-                                <a href={{ route('erplist') }} > ERP List</a>
+                                <a href={{ route('partner.list') }} > ERP List</a>
                             </li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@
                     <div class="collapse" id="sidebarProjects">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="/">List</a>
+                                <a >List</a>
                             </li>
                             <li>
                                 <a href="/">Detail</a>
@@ -62,10 +62,16 @@
                     <div class="collapse" id="sidebarTasks">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="/">Inward</a>
+                                <a href={{ route('vendor.view') }}>Vendor</a>
                             </li>
                             <li>
-                                <a href="/">Outward</a>
+                                <a href={{ route('category.view') }} >Category</a>
+                            </li>
+                            <li>
+                                <a href={{ route('inward.view') }}>Inward</a>
+                            </li>
+                            <li>
+                                <a href={{ route('outward.view') }}>Outward</a>
                             </li>
                             <li>
                                 <a href="/">Movement History</a>
